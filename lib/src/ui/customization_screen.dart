@@ -4,7 +4,7 @@ class CustomizationScreen extends StatefulWidget {
   const CustomizationScreen({Key? key}) : super(key: key);
 
   @override
-  _CustomizationScreenState createState() => _CustomizationScreenState();
+  State<CustomizationScreen> createState() => _CustomizationScreenState();
 }
 
 class _CustomizationScreenState extends State<CustomizationScreen> {
@@ -24,7 +24,7 @@ class _CustomizationScreenState extends State<CustomizationScreen> {
                 height: 26,
                 child: Image.asset(kCoinImage),
               ),
-              const SizedBox(width: 4),
+              const SizedBox(width: 5),
               Text(playerExp.money.toString())
             ],
           ),
@@ -36,7 +36,7 @@ class _CustomizationScreenState extends State<CustomizationScreen> {
               double spacing = 8;
 
               if (character == playerExp.character) {
-                borderSide = BorderSide(
+                borderSide = const BorderSide(
                   width: 4,
                   color: Colors.red,
                 );
@@ -73,7 +73,7 @@ class _CustomizationScreenState extends State<CustomizationScreen> {
               );
             }).toList(),
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: 15),
           Row(
             children: BackgroundImage.options.map((BackgroundImage image) {
               final index = BackgroundImage.options.indexOf(image);

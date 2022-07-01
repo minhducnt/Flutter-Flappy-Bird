@@ -3,12 +3,13 @@ library ui;
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../constants/constants.dart';
-import '../game/game.dart';
-import '../models/models.dart';
-import '../utils/ultis.dart';
-import '../views/views.dart';
-import '../widgets/widgets.dart';
+import '../data/utils/constants.dart';
+import '../data/models/models.dart';
+import '../data/utils/ultis.dart';
+
+import '../modules/game/game.dart';
+import '../modules/views/views.dart';
+import '../modules/widgets/widgets.dart';
 
 part 'customization_screen.dart';
 part 'game_screen.dart';
